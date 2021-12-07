@@ -1,0 +1,9 @@
+.asset-card {
+    width: 296px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+picture > img {
+    width: 100%;
+}

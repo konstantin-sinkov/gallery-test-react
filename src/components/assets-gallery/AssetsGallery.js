@@ -1,10 +1,18 @@
 import React from 'react';
+import AssetCard from "../asset-card/AssetCard";
 
 const AssetsGallery = ({assets}) => {
-  console.log(assets);
+  // console.log(assets);
   return (
    <div className="assets-wrapper">
-        Assets Gallery
+       {
+           assets.map(el =>
+               <AssetCard
+                   asset={el}
+                   previewImage={el['preview-image']}
+                   key = {el.id}/>
+           )
+       }
    </div>
   );
  }
