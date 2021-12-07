@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import {getAssets} from "./services/assets.service";
 import AssetsGallery from "./components/assets-gallery/AssetsGallery";
 import assets from './data.json';
+import SidebarFilter from "./components/sidebar-asset-filter/SidebarFilter";
 
 
 function App() {
@@ -17,8 +18,8 @@ function App() {
   // }, []);
 
   return (
-    <div>
-      <h1>Start page</h1>
+    <div className="wrapper">
+        <SidebarFilter />
         <AssetsGallery assets={assets}/>
     </div>
   );

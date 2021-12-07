@@ -1,4 +1,5 @@
 import React from 'react';
+import './AssetsGallery.css';
 import AssetCard from "../asset-card/AssetCard";
 
 const AssetsGallery = ({assets}) => {
